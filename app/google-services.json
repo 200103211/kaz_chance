@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1038817407865",
+    "project_id": "kaz-chance",
+    "storage_bucket": "kaz-chance.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1038817407865:android:5dc51e361ec799947335a8",
+        "android_client_info": {
+          "package_name": "com.example.kaz_chance"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1038817407865-i7apundpps9u678ebmc8ai5e3ki3m5ol.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZDKPzgJMb6dWliWRmGEo-Hd4My_orsyQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1038817407865-i7apundpps9u678ebmc8ai5e3ki3m5ol.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
