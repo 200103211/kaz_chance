@@ -6,7 +6,8 @@
     android:layout_height="match_parent">
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/gameOverBackground">
 
 
     <TextView
@@ -17,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.772" />
+        app:layout_constraintVertical_bias="0.800" />
 
     <Button
         android:layout_width="wrap_content"
@@ -26,18 +27,17 @@
         android:layout_marginTop="@dimen/vertical_margin"
         android:layout_marginEnd="@dimen/vertical_margin"
         android:layout_marginBottom="40dp"
-        android:text="@string/start"
+        android:text="Тіркелу"
         android:textColor="@color/white"
         android:textSize="@dimen/button_text_size"
 
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tryAgainImage"
         tools:ignore="UnknownIdInLayout" />
-
     <Button
         android:id="@+id/tryAgainButton"
         android:layout_width="wrap_content"
@@ -46,16 +46,18 @@
         android:layout_marginTop="@dimen/vertical_margin"
         android:layout_marginEnd="@dimen/vertical_margin"
         android:layout_marginBottom="88dp"
-        android:text="@string/start"
-        android:textColor="@color/black"
+        android:text="Кіру"
+        android:textColor="@color/white"
         android:textSize="@dimen/button_text_size"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.53"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tryAgainImage"
         tools:ignore="UnknownId,UnknownIdInLayout" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

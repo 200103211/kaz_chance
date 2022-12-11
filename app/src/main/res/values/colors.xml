@@ -13,7 +13,7 @@
     <color name="colorAccent">#aab388</color>
     <color name="youWinDark">#35A571</color>
     <color name="youWinBackground">#B7F8C9</color>
-    <color name="gameOverBackground">#f8bbd0</color>
+    <color name="gameOverBackground">#aab388</color>
 
     <color name="g_black">#171717</color>
     <color name="g_blue">#000DAE</color>

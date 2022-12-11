@@ -2,4 +2,8 @@
 <resources>
     <item name="tv_best_quality" type="id" />
     <item name="tryAgainImage" type="id" />
+    <item name="guideline1" type="id" />
+    <item name="tv_app_name" type="id" />
+    <item name="tvDontHaveAccouunt" type="id" />
+    <item name="ed_email_login" type="id" />
 </resources>
