@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/log_reg"
+    app:startDestination="@id/oneFragment2">
+    <fragment
+        android:id="@+id/threeFragment"
+        android:name="com.example.kaz_chance.fragments.Logreg.ThreeFragment"
+        android:label="ThreeFragment"
+        tools:layout="@layout/fragment_three">
+        <action
+            android:id="@+id/action_threeFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourFragment"
+        android:name="com.example.kaz_chance.fragments.Logreg.FourFragment"
+        android:label="FourFragment"
+        tools:layout="@layout/fragment_four">
+        <action
+            android:id="@+id/action_fourFragment_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneFragment2"
+        android:name="com.example.kaz_chance.fragments.Logreg.OneFragment"
+        android:label="OneFragment"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_oneFragment2_to_threeFragment"
+            app:destination="@id/threeFragment" />
+    </fragment>
+</navigation>
