@@ -36,12 +36,11 @@
          />
 
 
-
     <TextView
         android:id="@+id/tv_lets_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/poppins_thin"
         android:gravity="center"
         android:text="@string/g_let_s_login"
@@ -50,37 +49,35 @@
         app:layout_constraintStart_toStartOf="@id/guideline1"
         app:layout_constraintTop_toBottomOf="@id/tv_app_name" />
 
-
-
     <TextView
         android:id="@+id/tv_dont_have_an_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
-        android:text="@string/g_don_t_have_an_account_register"
-        android:textColor="@color/g_hint"
-        android:textSize="10dp"
+        android:text="Әлі тіркелмедіңіз бе? Тіркелу"
+        android:textColor="@color/teal_700"
+        android:textSize="15dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/tv_lets_login"
         app:layout_constraintTop_toBottomOf="@id/tv_lets_login" />
-
 
     <EditText
         android:id="@+id/ed_email_login"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:hint="@string/g_email"
+        android:singleLine="true"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/tv_dont_have_an_account"
-        android:singleLine="true" />
-
+        app:layout_constraintTop_toBottomOf="@id/tv_dont_have_an_account" />
 
     <EditText
         android:id="@+id/ed_password_login"
@@ -91,11 +88,12 @@
         android:gravity="center"
         android:hint="@string/g_password"
         android:password="true"
+        android:singleLine="true"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/guideline1"
-        app:layout_constraintTop_toBottomOf="@id/ed_email_login"
-        android:singleLine="true"/>
+        app:layout_constraintTop_toBottomOf="@id/ed_email_login" />
 
     <TextView
         android:id="@+id/tv_forgot_password"
@@ -103,29 +101,74 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
-        android:text="@string/g_forgot_password"
-        android:textColor="@color/g_hint"
-        android:textSize="10dp"
+        android:text="Құпиясөзді ұмыттым"
+        android:textColor="@color/teal_700"
+        android:textSize="13dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/ed_password_login"
         app:layout_constraintTop_toBottomOf="@+id/ed_password_login"
         android:layout_marginTop="5dp"/>
 
 
-    <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
-        android:id="@+id/btn_login_fragment"
-        android:layout_width="0dp"
-        android:layout_height="@dimen/_45sdp"
-        android:background="@drawable/btn_background"
-        android:fontFamily="@font/poppins_light"
-        android:text="@string/g_log_in"
+    <ImageView
+        android:id="@+id/btn_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="180dp"
+        android:src="@drawable/log"
+        app:layout_constraintStart_toStartOf="@id/guideline1"
+        app:layout_constraintTop_toBottomOf="@id/ed_email_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g_facebook"
+        app:layout_constraintBottom_toBottomOf="@id/btn_facebook"
+        app:layout_constraintEnd_toEndOf="@id/btn_facebook"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintStart_toStartOf="@id/btn_facebook"
+        app:layout_constraintTop_toTopOf="@id/btn_facebook"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <ImageView
+        android:id="@+id/btn_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/google_lodin"
+        app:layout_constraintEnd_toEndOf="@id/guideline2"
+        app:layout_constraintTop_toBottomOf="@id/ed_email_login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/g_google"
+        app:layout_constraintStart_toStartOf="@id/btn_google"
+        app:layout_constraintEnd_toEndOf="@id/btn_google"
+        app:layout_constraintTop_toTopOf="@id/btn_google"
+        app:layout_constraintBottom_toBottomOf="@id/btn_google"/>
+
+
+    <Button
+        android:id="@+id/tryAgainButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/vertical_margin"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:layout_marginEnd="@dimen/vertical_margin"
+        android:layout_marginBottom="228dp"
+        android:text="Кіру"
         android:textColor="@color/white"
-        android:textSize="@dimen/_12sdp"
+        android:textSize="@dimen/button_text_size"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/guideline2"
-        app:layout_constraintStart_toStartOf="@+id/guideline1"
-        app:layout_constraintTop_toBottomOf="@+id/tv_forgot_password"
-        android:layout_marginTop="15dp"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tryAgainImage"
+        tools:ignore="UnknownId,UnknownIdInLayout" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
