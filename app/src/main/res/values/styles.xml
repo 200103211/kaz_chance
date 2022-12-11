@@ -61,6 +61,12 @@
         <item name="android:windowSoftInputMode">adjustResize</item>
     </style>
 
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Theme customization. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
 
     <dimen name="_20ssp" />
     <dimen name="_15ssp" />
@@ -70,4 +76,5 @@
     <dimen name="h4TextSize" />
     <dimen name="h2TextSize" />
     <dimen name="h3TextSize" />
+
 </resources>
