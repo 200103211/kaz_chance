@@ -6,11 +6,13 @@ plugins {
     id 'dagger.hilt.android.plugin'
     id 'com.google.gms.google-services'
 
+
 }
 
 android {
     namespace 'com.example.kaz_chance'
     compileSdk 32
+    buildToolsVersion "30.0.3"
 
     defaultConfig {
         applicationId "com.example.kaz_chance"
@@ -89,6 +91,8 @@ dependencies {
 
 
     //Dagger hilt
-    implementation "com.google.dagger:hilt-android:2.38.1"
-    kapt "com.google.dagger:hilt-compiler:2.38.1"
+    implementation "com.google.dagger:hilt-android:2.42"
+    kapt "com.google.dagger:hilt-compiler:2.42"
+
+
 }
